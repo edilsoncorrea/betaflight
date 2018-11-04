@@ -124,16 +124,16 @@
 #define USE_BRUSHED_ESC_AUTODETECT  // Detect if brushed motors are connected and set defaults appropriately to avoid motors spinning on boot
 #define USE_CLI
 #define USE_GYRO_REGISTER_DUMP  // Adds gyroregisters command to cli to dump configured register values
-#define USE_PPM
-#define USE_PWM
+//#define USE_PPM
+//#define USE_PWM
 #define USE_SERIAL_RX
-#define USE_SERIALRX_CRSF       // Team Black Sheep Crossfire protocol
+//#define USE_SERIALRX_CRSF       // Team Black Sheep Crossfire protocol
 #define USE_SERIALRX_IBUS       // FlySky and Turnigy receivers
 #define USE_SERIALRX_SBUS       // Frsky and Futaba receivers
 #define USE_SERIALRX_SPEKTRUM   // SRXL, DSM2 and DSMX protocol
-#define USE_SERIALRX_SUMD       // Graupner Hott protocol
-#define USE_SERIALRX_SUMH       // Graupner legacy protocol
-#define USE_SERIALRX_XBUS       // JR
+//#define USE_SERIALRX_SUMD       // Graupner Hott protocol
+//#define USE_SERIALRX_SUMH       // Graupner legacy protocol
+//#define USE_SERIALRX_XBUS       // JR
 
 
 
@@ -146,7 +146,7 @@
 #if (FLASH_SIZE > 64)
 #define USE_ACRO_TRAINER
 #define USE_BLACKBOX
-#define USE_LED_STRIP
+//#define USE_LED_STRIP
 #define USE_RESOURCE_MGMT
 #define USE_RUNAWAY_TAKEOFF     // Runaway Takeoff Prevention (anti-taz)
 #define USE_SERVOS
@@ -155,10 +155,24 @@
 #define USE_TELEMETRY_HOTT
 #define USE_TELEMETRY_LTM
 #define USE_TELEMETRY_SMARTPORT
+
+#define USE_GPS
+#define USE_GPS_UBLOX
+#define USE_GPS_NMEA
+#define USE_GPS_RESCUE
+#define USE_ABSOLUTE_CONTROL
+
+#define USE_OSD
+#define USE_OSD_OVER_MSP_DISPLAYPORT
+#define USE_OSD_ADJUSTMENTS
+
+#define USE_TELEMETRY_IBUS
+#define USE_TELEMETRY_IBUS_EXTENDED
+
 #endif
 
 #if (FLASH_SIZE > 128)
-#define USE_CAMERA_CONTROL
+//#define USE_CAMERA_CONTROL
 #define USE_CMS
 #define USE_EXTENDED_CMS_MENUS
 #define USE_DSHOT_DMAR
@@ -176,10 +190,10 @@
 #define USE_TELEMETRY_CRSF
 #define USE_TELEMETRY_SRXL
 #define USE_VIRTUAL_CURRENT_METER
-#define USE_VTX_COMMON
-#define USE_VTX_CONTROL
-#define USE_VTX_SMARTAUDIO
-#define USE_VTX_TRAMP
+//#define USE_VTX_COMMON
+//#define USE_VTX_CONTROL
+//#define USE_VTX_SMARTAUDIO
+//#define USE_VTX_TRAMP
 #define USE_GYRO_LPF2
 #define USE_ESC_SENSOR
 #define USE_ESC_SENSOR_INFO
@@ -204,20 +218,10 @@
 
 #if (FLASH_SIZE > 256)
 #define USE_DASHBOARD
-#define USE_GPS
-#define USE_GPS_NMEA
-#define USE_GPS_UBLOX
-#define USE_GPS_RESCUE
-#define USE_OSD
-#define USE_OSD_OVER_MSP_DISPLAYPORT
-#define USE_OSD_ADJUSTMENTS
 #define USE_SENSOR_NAMES
 #define USE_SERIALRX_JETIEXBUS
-#define USE_TELEMETRY_IBUS
-#define USE_TELEMETRY_IBUS_EXTENDED
 #define USE_TELEMETRY_JETIEXBUS
 #define USE_TELEMETRY_MAVLINK
 #define USE_UNCOMMON_MIXERS
 #define USE_SIGNATURE
-#define USE_ABSOLUTE_CONTROL
 #endif
